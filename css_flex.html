@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        border: 5px solid aqua;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+      }
+      .box1 {
+        border: 1px solid black;
+        flex: 1;
+      }
+      .box2 {
+        flex: 5;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid violet;
+      }
+      .box3 {
+        border: 1px solid red;
+        flex: 1;
+      }
+      .box4 {
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid blue;
+      }
+      .box5 {
+        border: 1px solid bisque;
+        flex: 1;
+      }
+      .box6 {
+        flex: 6;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">Header</div>
+      <div class="box1 box2">
+        <div class="box3">nav</div>
+        <div class="box3 box4">
+          <div class="box5"> section</div>
+          <div class="box5">header</div>
+          <div class="box5 box6">main</div>
+          <div class="box5">footer</div>
+        </div>
+        <div class="box3">aside</div>
+      </div>
+      <div class="box1">fotter</div>
+    </div>
+  </body>
+</html>
