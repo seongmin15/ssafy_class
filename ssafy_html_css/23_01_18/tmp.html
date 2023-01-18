@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>안녕 나는 자룡이</h1>
+    <div class="container">
+      <div class="img-wrapper">
+        <img src="./jony.jpg" alt="자룡이" height="300" />
+      </div>
+      <div class="hobby-list">
+        <h2>취미목록</h2>
+        <ul>
+          <li>영화보기</li>
+          <li>코딩하기</li>
+          <li>산책가기</li>
+          <li>게임하기</li>
+          <li>등산가기</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      // const img = document.querySelector(".img-wrapper > img");
+      // img.src = "./profile.jpg";
+
+      const imgWrapper = document.querySelector(".img-wrapper");
+      const img = imgWrapper.querySelector("img"); // -> querySelector는 가지고 온 DOM에 다 적용할 수 있다.
+      img.src = "./profile.jpg";
+
+      const hobby_list = document.querySelectorAll(".hobby-list li");
+      hobby_list[0].textContent = "싸피";
+      document.querySelectorAll(".hobby-list li")[2].textContent = "하하하";
+      for (let hobby of hobby_list) {
+        console.log(hobby.textContent);
+      }
+    </script>
+  </body>
+</html>
