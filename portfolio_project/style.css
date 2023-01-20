@@ -1,0 +1,22 @@
+.carousel-item img {
+  height: 100vh;
+}
+
+nav {
+  z-index: 1;
+}
+
+#git-image {
+  width: 16px;
+  height: 16px;
+}
+
+#git-link {
+  text-decoration: none;
+  color: black;
+}
+
+#language-part {
+  position: fixed;
+  bottom: 0;
+}
