@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .new {
+      text-align: center;
+      font-weight: bolder;
+      font-size: larger;
+    }
+
+    .img-wrapper {
+      border: 15px solid black;
+      margin-right: 2px;
+      margin-top: 50px;
+      position: relative;
+      box-shadow: 2px 2px 2px 2px gray;
+    }
+
+    .icon {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: rgb(255, 187, 0);
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -50px;
+      left: -50px;
+    }
+
+    .img_1 {
+      height: 200px;
+      width: 300px;
+      background-image: url("./images/cat_1.jpg");
+      background-size: cover;
+    }
+
+    .img_2 {
+      height: 200px;
+      width: 150px;
+      background-image: url("./images/cat_2.jpg");
+      background-size: cover;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <div class="img-wrapper img_1">
+      <div class="icon"><div class="new">NEW</div></div>
+    </div>
+    <div class="img-wrapper img_2"></div>
+  </main>
+</body>
+</html>
