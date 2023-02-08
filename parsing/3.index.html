@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div>배열</div>
+      <input type="text" id="arr">
+    </div>
+    <div>
+      <div>포함 되었는지 확인할 값</div>
+      <input type="text" id="check">
+    </div>
+    <button>결과</button>
+
+    <script>
+      const inp_arr = document.querySelector("#arr");
+      const inp_check = document.querySelector("#check");
+      const btn = document.querySelector("button");
+      const div = document.createElement("div");
+
+      btn.addEventListener("click", function () {
+        const arr = inp_arr.value.split(",");
+        const check = inp_check.value;
+        const flag = arr.some(element => element === check);
+
+        if (flag) {
+          div.innerHTML = "포함";
+          document.body.append(div);
+        }
+        else {
+          div.innerHTML = "미포함";
+          document.body.append(div);
+        }
+      })
+    </script>
+  </body>
+</html>
