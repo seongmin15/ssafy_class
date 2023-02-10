@@ -1,0 +1,47 @@
+.main-container {
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.timer {
+  font-weight: 500;
+  font-size: 168px;
+  line-height: 168p;
+}
+
+.timer-content {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.memo-wrapper {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.memo {
+  font-size: 30px;
+}
+
+.modal-button {
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  width: 100px;
+  height: 100px;
+  background: url("./images/001-cloud.png");
+  background-size: cover;
+}
